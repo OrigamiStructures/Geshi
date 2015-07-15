@@ -1,0 +1,23 @@
+{
+    "name": "your-name-here/Geshi",
+    "description": "Geshi plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "require": {
+        "php": ">=5.4.16",
+        "cakephp/cakephp": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Geshi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Geshi\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
