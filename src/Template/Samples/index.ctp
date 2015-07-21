@@ -9,17 +9,24 @@
 	}
 </style>
 <h3>Overview</h3>
-<p>GeSHi generally returns an object that can then be modified through a series 
-	of calls to its methods. The calls determine the language assumed when 
-	parsing the code, set formatting for code blocks and determine the use of 
-	css (inline or style sheets). Once the objects are configured, other call 
-	will output the highlighted code.</p>
-<p>The Geshi Plugin give you methods to create GeSHi objects. You can work with the 
-	objects exactly as you would GeSHi object (beacuse that's what they are). 
+<p>
+	This <b>CakePHP 3.x Geshi Plugin</b> wraps <b><a href="http://qbnz.com/highlighter/">GeSHi</a></b>, 
+	a General Syntax Highlighter. It will allow you to output nicely highlighted 
+	source code in your web pages. <b>GeSHi</b> supports over 100 languages and allows 
+	you to write support for any additional languages you need. The <b>Geshi Plugin</b> 
+	supports 100% of <b>GeSHi</b>'s interface and adds a bit of sugar for your CakePHP apps.
+</p>
+<p><b>GeSHi</b> is designed to return an object that can then be modified through a series 
+	of method calls. The calls determine the language used to highlight the code, 
+	set formatting for code block output and determine the use of css (inline or 
+	style sheets). Once the objects are configured, other calls will output 
+	the highlighted code.</p>
+<p>The <b>Geshi Plugin</b> give you methods to create <b>GeSHi</b> objects. You can work with the 
+	objects exactly as you would <b>GeSHi</b> object (beacuse that's what they are). 
 	You can also create and output the objects in a single step. You might assume 
-	this would limit the formatting options for your code. But the Geshi Plugin 
+	this would limit the formatting options for your code. But the <b>Geshi Plugin</b> 
 	also provides tools to make templates which can carry all your formatting 
-	and configuration, so it's possible to create and output very complex GeSHi 
+	and configuration, so it's possible to create and output very complex <b>GeSHi</b> 
 	objects in a single step.</p>
 <?= $this->element('Geshi.implementation', ['code' => array_shift($implementation), 'number' => 1]); ?>
 
