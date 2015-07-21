@@ -8,6 +8,19 @@
 		margin: 0 5em;
 	}
 </style>
+<h3>Overview</h3>
+<p>GeSHi generally returns an object that can then be modified through a series 
+	of calls to its methods. The calls determine the language assumed when 
+	parsing the code, set formatting for code blocks and determine the use of 
+	css (inline or style sheets). Once the objects are configured, other call 
+	will output the highlighted code.</p>
+<p>The Geshi Plugin give you methods to create GeSHi objects. You can work with the 
+	objects exactly as you would GeSHi object (beacuse that's what they are). 
+	You can also create and output the objects in a single step. You might assume 
+	this would limit the formatting options for your code. But the Geshi Plugin 
+	also provides tools to make templates which can carry all your formatting 
+	and configuration, so it's possible to create and output very complex GeSHi 
+	objects in a single step.</p>
 <?= $this->element('Geshi.implementation', ['code' => array_shift($implementation), 'number' => 1]); ?>
 
 <?php
