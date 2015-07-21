@@ -22,7 +22,7 @@
 	style sheets). Once the objects are configured, other calls will output 
 	the highlighted code.</p>
 <p>The <b>Geshi Plugin</b> give you methods to create <b>GeSHi</b> objects. You can work with the 
-	objects exactly as you would <b>GeSHi</b> object (beacuse that's what they are). 
+	objects exactly as you would <b>GeSHi</b> objects (beacuse that's what they are). 
 	You can also create and output the objects in a single step. You might assume 
 	this would limit the formatting options for your code. But the <b>Geshi Plugin</b> 
 	also provides tools to make templates which can carry all your formatting 
