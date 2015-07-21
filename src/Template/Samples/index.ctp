@@ -7,6 +7,9 @@
 		padding: 1.5em;
 		margin: 0 5em;
 	}
+	.row {
+		padding: 1em;
+	}
 </style>
 <h3>Overview</h3>
 <p>
@@ -28,6 +31,7 @@
 	also provides tools to make templates which can carry all your formatting 
 	and configuration, so it's possible to create and output very complex <b>GeSHi</b> 
 	objects in a single step.</p>
+<p>The example code below uses an array of data structured like this:</p>
 <?= $this->element('Geshi.implementation', ['code' => array_shift($implementation), 'number' => 1]); ?>
 
 <?php
